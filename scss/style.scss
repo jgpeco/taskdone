@@ -8,6 +8,11 @@
   //   outline: 1px solid blue;
 }
 
+html,
+body {
+  height: 100vh;
+}
+
 body {
   font-family: 'Karla', sans-serif;
   font-size: 1rem;
@@ -88,6 +93,9 @@ img {
 //footer
 
 footer {
+  position: fixed;
+  bottom: 0px;
+  height: 7%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -97,5 +105,6 @@ footer {
 
   a {
     color: $light-color;
+    margin: 0rem 0.5rem;
   }
 }
