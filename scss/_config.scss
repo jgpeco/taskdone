@@ -1,0 +1,22 @@
+$primary-color: #2f9c95;
+$strong-color: #246a73;
+$danger-color: #8c271e;
+$light-color: #e4ffe1;
+$success-color: #4bb543;
+
+$max-width: 1100px;
+
+//set text color based on bg
+@function set-text-color($color) {
+  @if (lightness($color) > 60) {
+    @return $strong-color;
+  } @else {
+    @return $light-color;
+  }
+}
+
+//set bg & text color
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}

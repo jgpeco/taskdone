@@ -1,0 +1,50 @@
+//container
+
+.container {
+  max-width: $max-width;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+//text
+
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+//bg
+
+.bg {
+  &-primary {
+    @include set-background($primary-color);
+  }
+
+  &-strong {
+    @include set-background($strong-color);
+  }
+
+  &-light {
+    @include set-background($light-color);
+  }
+
+  &-danger {
+    @include set-background($danger-color);
+  }
+
+  &-success {
+    @include set-background($success-color);
+  }
+}
