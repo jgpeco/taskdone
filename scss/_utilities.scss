@@ -25,6 +25,11 @@
   margin-bottom: 1rem;
 }
 
+.lead-form {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
 //bg
 
 .bg {
@@ -64,8 +69,32 @@
   padding: 0.5rem 1.2rem;
   font-size: 1rem;
 
+  &.btn-primary {
+    @include set-background($primary-color);
+    &:hover {
+      background: lighten($primary-color, 5%);
+    }
+  }
+  &.btn-dark {
+    @include set-background($strong-color);
+    &:hover {
+      background: lighten($strong-color, 5%);
+    }
+  }
+  &.btn-success {
+    @include set-background($success-color);
+    &:hover {
+      background: lighten($success-color, 5%);
+    }
+  }
+  &.btn-danger {
+    @include set-background($danger-color);
+    &:hover {
+      background: lighten($danger-color, 5%);
+    }
+  }
   &:hover {
-    background-color: lighten($strong-color, 5%);
-    color: $light-color;
+    background-color: darken($light-color, 5%);
+    color: $strong-color;
   }
 }
