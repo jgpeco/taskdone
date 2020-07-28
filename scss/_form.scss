@@ -30,6 +30,11 @@
     font: inherit;
   }
 
+  input[type='search'] {
+    font: inherit;
+    width: 100%;
+  }
+
   .btn:hover {
     background-color: darken($light-color, 5%);
     color: $strong-color;

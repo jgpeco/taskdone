@@ -43,6 +43,7 @@ img {
 
 .navbar {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -79,8 +80,49 @@ img {
     margin-left: 0.35rem;
     font-size: 1.75rem;
   }
+
+  &-left {
+    display: flex;
+    align-items: center;
+  }
+
+  &-right {
+    display: flex;
+    align-items: center;
+  }
 }
 
+.navbar-search {
+  form {
+    width: 15rem;
+    margin-right: 1.5rem;
+    padding: 0.3rem;
+  }
+
+  input {
+    margin-bottom: 0.5rem;
+    border-radius: 25px;
+    padding: 0.2rem;
+    padding-bottom: 0.5rem;
+    border: 1px solid $strong-color;
+    font: inherit;
+    font-size: 1.2rem;
+    outline: none;
+  }
+
+  input::placeholder {
+    color: $primary-color;
+    font-size: 0.8rem;
+    padding: 1rem;
+    opacity: 0.8;
+  }
+
+  i {
+    margin-top: 0.9rem;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+  }
+}
 //landing body
 
 .landing {
@@ -148,5 +190,30 @@ footer {
 
   .button {
     margin-bottom: 0.2rem;
+  }
+}
+
+//Dashboard
+
+.dashboard {
+  padding: 2rem;
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 45%);
+  align-content: space-between;
+
+  &-title {
+    grid-area: header;
+    height: 15%;
+  }
+
+  &-body {
+    padding: 1rem;
+    border: 1.5px solid $strong-color;
+    border-radius: 5px;
+    height: 85%;
+    margin: 0 1rem;
   }
 }
