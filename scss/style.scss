@@ -215,5 +215,104 @@ footer {
     border-radius: 5px;
     height: 85%;
     margin: 0 1rem;
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    td {
+      padding: 0.25rem;
+    }
+
+    .name {
+      width: 50%;
+    }
+
+    .name-justwo {
+      width: 75%;
+    }
+
+    .expired {
+      color: $danger-color;
+    }
+  }
+}
+
+// All Projects Page
+.projects {
+  width: 98%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.projects-search {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  button {
+    align-self: flex-end;
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+  }
+
+  select {
+    width: 200px;
+    margin-left: 0.2rem;
+  }
+
+  i {
+    cursor: pointer;
+    margin-left: 0.3rem;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+  }
+}
+
+.projects-table {
+  margin-top: 1.5rem;
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  tr {
+    &:hover {
+      background: $light-color;
+    }
+
+    td {
+      color: #555;
+    }
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+  }
+
+  th {
+    font-size: 1.2rem;
+    border-right: 1px solid $light-color;
+    background-color: $primary-color;
+    color: $light-color;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  td:last-child,
+  th:last-child {
+    border-right: none;
+  }
+
+  .table-primary {
+    width: 30%;
   }
 }

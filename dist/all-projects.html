@@ -58,72 +58,39 @@
       </div>
     </nav>
 
-    <!-- dashboard -->
-    <section class="dashboard">
-      <div class="dashboard-group">
-        <h1 class="dashboard-title">
-          Projects
-        </h1>
-        <div class="dashboard-body">
-          <table>
-            <tbody>
-              <tr>
-                <td class="name-justwo">Test Project</td>
-                <td>Tasks</td>
-              </tr>
-            </tbody>
-          </table>
+    <section>
+      <div class="projects">
+        <div class="projects-search">
+          <form>
+            <input type="search" /><i class="fas fa-search"></i>
+            <select name="filter-projects" id="filter-projects">
+              <option value="all" selected>All Projects</option>
+              <option value="finished">Finished Projects</option>
+              <option value="discarded">Discarded Projects</option>
+            </select>
+          </form>
+          <button class="btn btn-primary">Create Project</button>
         </div>
-      </div>
-
-      <div class="dashboard-group">
-        <h1 class="dashboard-title">
-          My Tasks
-        </h1>
-        <div class="dashboard-body">
+        <div class="projects-table">
           <table>
+            <thead>
+              <tr>
+                <th class="table-primary">Name</th>
+                <th>Lead</th>
+                <th>Status</th>
+                <th>Ongoing Tasks</th>
+                <th>Start Date</th>
+                <th>Deadline</th>
+              </tr>
+            </thead>
             <tbody>
               <tr>
-                <td class="name">First Task</td>
-                <td>Test Project</td>
-                <td>07-28-2020</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="dashboard-group">
-        <h1 class="dashboard-title">
-          My Expired Tasks
-        </h1>
-        <div class="dashboard-body">
-          <table>
-            <tbody>
-              <tr>
-                <td class="name">First Task</td>
-                <td>Test Project</td>
-                <td class="expired">07-28-2020</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="dashboard-group">
-        <h1 class="dashboard-title">
-          Timeline
-        </h1>
-        <div class="dashboard-body">
-          <table>
-            <tbody>
-              <tr>
-                <td class="name-justwo">Created First Task</td>
-                <td>07-28-2020</td>
-              </tr>
-              <tr>
-                <td class="name-justwo">Created First Project</td>
-                <td>07-28-2020</td>
+                <td class="table-primary">Teste Project</td>
+                <td>Peco</td>
+                <td>Active</td>
+                <td>12</td>
+                <td>07/28/2020</td>
+                <td>09/28/2020</td>
               </tr>
             </tbody>
           </table>
