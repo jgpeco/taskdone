@@ -58,46 +58,53 @@
       </div>
     </nav>
 
-    <section>
-      <div class="projects">
-        <div class="projects-search">
-          <form>
-            <input type="search" /><i class="fas fa-search"></i>
-            <select name="filter-projects" id="filter-projects">
-              <option value="all" selected>All Projects</option>
-              <option value="finished">Finished Projects</option>
-              <option value="discarded">Discarded Projects</option>
+    <section class="form container" id="create-project">
+      <h1 class="large">Create New Task</h1>
+      <p class="lead-form">
+        <i class="fas fa-tasks"></i> Create a new task to the project you're
+        working on
+      </p>
+      <form action="all-tasks.html" class="form">
+        <div class="form-group">
+          <input type="text" placeholder="Title" required />
+        </div>
+
+        <div class="form-group">
+          <p>Description</p>
+          <textarea name="projectDescription" cols="30" rows="5"> </textarea>
+        </div>
+
+        <div class="form-split">
+          <div class="form-group">
+            <p>Deadline</p>
+            <input type="date" name="endDate" value="endDate" />
+          </div>
+          <div class="form-group">
+            <p>Severity</p>
+            <select name="severity">
+              <option value="urgent">Urgent</option>
+              <option value="high">High</option>
+              <option value="medium" selected>Medium</option>
+              <option value="low">Low</option>
             </select>
-          </form>
-          <button class="btn btn-primary">
-            <a href="create-project.html">Create Project</a>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <p>Assign to:</p>
+          <select name="assign-task">
+            <option value="dev1">Developer 1</option>
+            <option value="dev2">Developer 2</option>
+          </select>
+        </div>
+
+        <div class="form-create-btn">
+          <input type="submit" value="Create" class="btn btn-dark" />
+          <button class="btn btn-back">
+            <a href="all-tasks.html">See All Tasks</a>
           </button>
         </div>
-        <div class="table projects-table">
-          <table>
-            <thead>
-              <tr>
-                <th class="table-primary">Name</th>
-                <th>Lead</th>
-                <th>Status</th>
-                <th>Ongoing Tasks</th>
-                <th>Start Date</th>
-                <th>Deadline</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="table-primary">Teste Project</td>
-                <td>Peco</td>
-                <td>Active</td>
-                <td>12</td>
-                <td>07/28/2020</td>
-                <td>09/28/2020</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+      </form>
     </section>
   </body>
 </html>

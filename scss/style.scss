@@ -1,6 +1,7 @@
 @import 'config';
 @import 'utilities';
 @import 'form';
+@import 'table';
 
 * {
   box-sizing: border-box;
@@ -191,6 +192,11 @@ footer {
   .button {
     margin-bottom: 0.2rem;
   }
+
+  .btn:hover {
+    background-color: darken($light-color, 5%);
+    color: $strong-color;
+  }
 }
 
 //Dashboard
@@ -211,20 +217,10 @@ footer {
 
   &-body {
     padding: 1rem;
-    border: 1.5px solid $strong-color;
+    border: 1px solid $strong-color;
     border-radius: 5px;
     height: 85%;
     margin: 0 1rem;
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      table-layout: fixed;
-    }
-
-    td {
-      padding: 0.25rem;
-    }
 
     .name {
       width: 50%;
@@ -236,6 +232,10 @@ footer {
 
     .expired {
       color: $danger-color;
+    }
+
+    td {
+      text-align: left;
     }
   }
 }
@@ -257,6 +257,10 @@ footer {
     position: absolute;
     right: 0;
     bottom: 5%;
+
+    a {
+      color: $light-color;
+    }
   }
 
   select {
@@ -274,45 +278,35 @@ footer {
 
 .projects-table {
   margin-top: 1.5rem;
+}
+
+//create a project page
+
+#create-project {
+  margin-top: 1.5rem;
+
+  textarea {
+    height: 82.5%;
+  }
+}
+
+.team {
+  input[type='search'] {
+    width: 90%;
+  }
+
+  button {
+    width: 8%;
+    padding: 0.3rem 0.6rem;
+  }
 
   table {
-    border-collapse: collapse;
+    margin-top: 0.2rem;
     width: 100%;
-    table-layout: fixed;
-  }
-
-  tr {
-    &:hover {
-      background: $light-color;
-    }
+    border: 0.5px solid $primary-color;
 
     td {
-      color: #555;
+      text-align: left;
     }
-  }
-
-  th,
-  td {
-    padding: 0.5rem;
-  }
-
-  th {
-    font-size: 1.2rem;
-    border-right: 1px solid $light-color;
-    background-color: $primary-color;
-    color: $light-color;
-  }
-
-  td {
-    text-align: center;
-  }
-
-  td:last-child,
-  th:last-child {
-    border-right: none;
-  }
-
-  .table-primary {
-    width: 30%;
   }
 }
