@@ -58,47 +58,65 @@
       </div>
     </nav>
 
-    <section>
-      <div class="projects">
-        <div class="projects-search">
-          <form>
-            <input type="search" /><i class="fas fa-search"></i>
-            <select name="filter-projects" id="filter-projects">
-              <option value="all" selected>All Projects</option>
-              <option value="finished">Finished Projects</option>
-              <option value="discarded">Discarded Projects</option>
-            </select>
-          </form>
-          <button class="btn btn-primary">
-            <a href="create-project.html">Create Project</a>
-          </button>
-        </div>
-        <div class="table projects-table">
-          <table>
-            <thead>
-              <tr>
-                <th class="table-primary">Name</th>
-                <th>Lead</th>
-                <th>Status</th>
-                <th>Ongoing Tasks</th>
-                <th>Start Date</th>
-                <th>Deadline</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="table-primary">
-                  <a href="single-project.html">Teste Project</a>
-                </td>
-                <td>Peco</td>
-                <td>Active</td>
-                <td>12</td>
-                <td>07/28/2020</td>
-                <td>09/28/2020</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    <section class="project-item table container">
+      <div class="project-info">
+        <h1 class="large">Project Title</h1>
+        <p class="info-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+          ratione soluta totam a, veritatis inventore maiores recusandae
+          dignissimos! Reprehenderit, in.
+        </p>
+      </div>
+
+      <div class="project-team">
+        <h2 class="lead">Project Team</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td>Developer 1</td>
+            </tr>
+            <tr>
+              <td>Developer 2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tasks-expired">
+        <h2 class="lead">Expired Tasks</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td class="name">First Task</td>
+              <td>Test Project</td>
+              <td>07-28-2020</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tasks-status table-status">
+        <h2 class="lead">Tasks - Status</h2>
+        <table>
+          <tbody>
+            <tr id="open">
+              <td class="name-justwo">Open</td>
+              <td>12</td>
+            </tr>
+            <tr id="progress">
+              <td class="name-justwo">In Progress</td>
+              <td>23</td>
+            </tr>
+            <tr id="done">
+              <td class="name-justwo">Done</td>
+              <td>6</td>
+            </tr>
+            <tr id="expired">
+              <td class="name-justwo">Expired</td>
+              <td>11</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
   </body>
