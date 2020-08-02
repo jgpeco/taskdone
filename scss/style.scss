@@ -422,3 +422,69 @@ footer {
     }
   }
 }
+
+//all tasks page
+
+.tasks-container {
+  max-width: 100%;
+  margin: auto;
+  padding: 1rem 2rem;
+
+  .taskflow {
+    display: grid;
+    grid-template-columns: repeat(4, 22%) 12%;
+
+    height: 85vh;
+    text-align: center;
+
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+
+    &-group {
+      border-right: 1px dashed $primary-color;
+      margin-top: 0.5rem;
+    }
+
+    &-group:nth-child(1) {
+      // background-color: red;
+    }
+
+    &-group:nth-child(2) {
+      // background-color: blue;
+    }
+
+    &-group:nth-child(3) {
+      // background-color: yellow;
+    }
+    &-group:nth-child(4) {
+      // background-color: green;
+    }
+    &-group:nth-child(5) {
+      border: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      div {
+        margin: 1.5rem;
+      }
+
+      div:nth-child(1) {
+        background-color: $light-color;
+        padding: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      div:nth-child(2) {
+        text-align: left;
+        line-height: 1.5rem;
+      }
+
+      span {
+        color: $strong-color;
+        font-weight: 700;
+      }
+    }
+  }
+}

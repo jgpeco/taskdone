@@ -20,6 +20,12 @@
   margin-bottom: 1rem;
 }
 
+.lead-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
 .lead {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -101,5 +107,27 @@
   &:hover {
     background-color: darken($light-color, 5%);
     color: $strong-color;
+  }
+}
+
+//tasks
+
+.task {
+  color: $strong-color;
+
+  &-open {
+    background-color: $light-color;
+  }
+
+  &-progress {
+    background-color: #fcf99f;
+  }
+
+  &-done {
+    background-color: #bbf2fc;
+  }
+
+  &-expired {
+    background-color: #ff9191;
   }
 }
